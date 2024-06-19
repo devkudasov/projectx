@@ -14,6 +14,3 @@ on:
 jobs:
   analyze:
     uses: ./.github/workflows/_analyze.yml
-  build-and-deploy:
-    needs: [ "analyze" ]
-    uses: ./.github/workflows/_build-and-deploy-web.yml
