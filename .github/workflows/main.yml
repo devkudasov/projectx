@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Analyze Code
+name: Analyze | Build | Deploy All
 
 on:
   push:
