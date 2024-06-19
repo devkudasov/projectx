@@ -1,0 +1,18 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Analyze | Build | Deploy All
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request_target:
+    branches: [ "main" ]
+
+jobs:
+  analyze:
+    uses: ./.github/workflows/_analyze.yml
+  build-and-deploy:
+    uses: ./.github/workflows/_build-and-deploy-web.yml
