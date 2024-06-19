@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: "../actions/setup.yml"
+      - name: Setup
+        uses: "../actions/setup.yml"
 
       - name: Verify formatting
         run: dart format --output=none --set-exit-if-changed .
